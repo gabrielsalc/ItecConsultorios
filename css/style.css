@@ -67,14 +67,14 @@ a {
   margin-bottom: 32px;
 }
 
-#overview,
+#acercade,
 #register {
   padding-top: 14rem;
   padding-bottom: 14rem;
 }
 
 #detail, #video,
-#speakers, 
+#profesionales, 
 #program,
 #sponsors, 
 #contact, footer {
@@ -83,12 +83,12 @@ a {
 }
 
 #detail,
-#speakers, #sponsors,
+#profesionales, #sponsors,
 footer {
   text-align: center;
 }
 
-#overview h3,
+#acercade h3,
 #detail h3, #video h3,
 #register h3,
 #venue h3,
@@ -96,7 +96,7 @@ footer {
     padding-bottom: 12px;
 }
 
-#intro .btn,
+#inicio .btn,
 #contact .btn {
     background-color: #f2545f;
     border-radius: 5px;
@@ -109,10 +109,10 @@ footer {
     margin-right: 12px;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
-    width: 20%;
+    width: 25%;
 }
 
-#intro .btn-danger,
+#inicio .btn-danger,
 #contact .btn-danger {
     background: #f2545f;
     border-color: transparent;
@@ -122,7 +122,7 @@ footer {
   border-radius: 100px;
 }
 
-#intro .btn-danger:hover {
+#inicio .btn-danger:hover {
   background: transparent;
   border-color: #ffffff;
   color: #ffffff;
@@ -132,7 +132,7 @@ footer {
   background: #222;
 }
 
-#intro .btn-default:hover {
+#inicio .btn-default:hover {
     background: #ffffff;
     color: #333333;
     border-color: transparent;
@@ -205,14 +205,14 @@ footer {
     line-height: 40px;
 }
 
-.custom-navbar .nav li a {
+.custom-navbar .nav li a { /*accesos directos de la navbar*/
     color: #ddd;
-    font-size: 12px;
+    font-size: 20px;
     font-weight: 500;
     letter-spacing: 0.6px;
     text-transform: uppercase;
     line-height: 40px;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.1s ease-in-out;
 }
 
 .custom-navbar .nav li a:hover {
@@ -263,9 +263,9 @@ footer {
 
 
 /*---------------------------------------
-    Intro section              
+  #iniciosection              
 -----------------------------------------*/
-#intro {
+#inicio {
     background: url('../images/hallitec.jpg') 50% 0 repeat-y fixed;
     -webkit-background-size: cover;
     background-size: cover;
@@ -273,24 +273,24 @@ footer {
     color: #ffffff;
     display: -webkit-box;
     display: -webkit-flex;
-     display: -ms-flexbox;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-     -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     height: 100vh;
     text-align: center;
 }
 
-#intro h3 {
+#inicio h3 {
   letter-spacing: 2px;
 }
 
 /*---------------------------------------
-   Overview  section              
+   acercade  section              
 -----------------------------------------*/
-#overview img {
+#acercade img {
   position: relative;
   padding-bottom: 32px;
 }
@@ -322,23 +322,23 @@ footer {
 
 
 /*---------------------------------------
-   Speakers section              
+   profesionales section              
 -----------------------------------------*/
-#speakers {
+#profesionales {
     background: #f9f9f9;
 }
 
-#speakers h3 {
+#profesionales h3 {
     font-size: 18px;
     margin-bottom: 0px;
 }
 
-#speakers h6 {
+#profesionales h6 {
   color: #666;
   margin-top: 4px;
 }
 
-#speakers img {
+#profesionales img {
   background: #f9f9f9;
   width: 100%;
   max-width: 100%;
@@ -350,7 +350,7 @@ footer {
   border-inline-color: blue;
 }
 
-#speakers .col-md-3 {
+#profesionales .col-md-3 {
     display: block;
     width: 25%;
     padding-top: 30px;
@@ -358,9 +358,28 @@ footer {
     margin-bottom: 22px;
 }
 
-#speakers .speakers-wrapper {
+#profesionales .profesionales-wrapper {
     background: #f9f9f9;
     padding-bottom: 22px;
+}
+
+#medicos .btn-default {
+    background-color: #f2545f;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 100%;
+    padding: 14px 42px;
+    margin-right: 12px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    width: 80%;
+}
+
+#medicos .btn-default:hover {
+  background: #2538dd;
+  border-color: transparent;
 }
 
 
@@ -692,8 +711,11 @@ footer {
 	line-height: 20px;
   }
 
-  #intro { height: 65vh; }
-
+  #inicio{ height: 65vh; }
+  
+  #inicio .btn{
+    width: 40%
+  }
   #video iframe {
     margin-top: 42px;
   }
@@ -711,7 +733,7 @@ footer {
     line-height: 20px;
   }
 
-  #overview img,
+  #acercade img,
   #detail .col-md-4,
   #register form {
     padding-top: 32px;
@@ -737,7 +759,7 @@ footer {
     align-content: center;
   }
 
-  #speakers .col-md-3 {
+  #profesionales .col-md-3 {
     display: inline-block;
     width: 40%;
     padding: 0px;
@@ -748,8 +770,12 @@ footer {
 
 @media (max-width: 760px) {
 
-  #intro {
+  #inicio {
     height: 100vh;
+  }
+  #inicio .btn{
+    background-color: #f2545f;
+    width: 80%
   }
 
 }
