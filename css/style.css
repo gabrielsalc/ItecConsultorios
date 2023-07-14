@@ -106,7 +106,6 @@ footer {
     font-size: 100%;
     padding: 14px 42px;
     margin-top: 42px;
-    margin-right: 12px;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     width: 25%;
@@ -139,7 +138,7 @@ footer {
 }
 
 .parallax-section {
-  background-attachment: fixed !important;
+  background-attachment: scroll !important;
   background-size: cover !important;
 }
 /*---------------------------------------
@@ -196,13 +195,15 @@ footer {
 .custom-navbar {
     margin-bottom: 0;
     background-color: #101010;
+    height: 9%;
+    padding-bottom: 10%;
+    padding-top: 10px;
 }
 
 .custom-navbar .navbar-brand {
     color: #ffffff;
     font-weight: 600;
     font-size: 3rem;
-    line-height: 40px;
 }
 
 .custom-navbar .nav li a { /*accesos directos de la navbar*/
@@ -759,8 +760,8 @@ footer {
 
 @media (max-width: 768px) {
 
-  .custom-navbar .navbar-brand {
-    line-height: 20px;
+  .custom-navbar {
+    height: 10%;
   }
 
   #acercade img,
