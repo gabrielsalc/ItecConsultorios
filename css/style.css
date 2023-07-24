@@ -699,7 +699,7 @@ footer {
 /*---------------------------------------
    Responsive styles            
 -----------------------------------------*/
-@media (max-width: 1200px){
+@media (max-width: 1200px) and (max-resolution: 80dpi) {
   #medicos .btn-default {
     /* background-color: #f2545f;
     border-radius: 5px; */
@@ -707,6 +707,22 @@ footer {
     font-weight: 400;
     letter-spacing: 1px;
     font-size: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+    /* margin-right: 12px; */
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    width: 80%;
+  }
+}
+@media (max-width: 1200px) and (max-resolution: 200dpi) {
+  #medicos .btn-default {
+    /* background-color: #f2545f;
+    border-radius: 5px; */
+    color: #ffffff;
+    font-weight: 400;
+    letter-spacing: 10px;
+    font-size: 50px;
     padding-left: 0px;
     padding-right: 0px;
     /* margin-right: 12px; */
