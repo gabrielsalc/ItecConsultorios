@@ -376,14 +376,28 @@ footer {
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     width: 80%;
+    margin-top: 5px;
 }
 
 #medicos .btn-default:hover {
-  background: #2538dd;
+  background: #2e40e4;
   border-color: transparent;
 }
 
-
+#medicos .obrasocialsi{
+  background: rgb(150, 240, 150);
+  border-radius: 5%;
+  padding: 1%;
+  margin-bottom: 10%;
+  color: black;
+}
+#medicos .obrasocialno{
+  background: rgb(240, 149, 240);
+  border-radius: 5%;
+  padding: 1%;
+  margin-bottom: 10%;
+  color: white;
+}
 /*---------------------------------------
    Program section              
 -----------------------------------------*/
