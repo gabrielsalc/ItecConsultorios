@@ -401,6 +401,13 @@ footer {
 /*---------------------------------------
    Program section              
 -----------------------------------------*/
+#program{
+  width: 100%;
+  height: 100%;
+}
+#program .divmapa{
+  align-items: center;
+}
 #program h4 {
     color: #808080;
     font-size: 12px;
