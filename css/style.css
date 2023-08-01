@@ -818,7 +818,15 @@ footer {
     padding: 0px;
     margin: 2%;   
 }
-
+  #navigation{
+    background-color: #000000;
+  }
+  #navigation li{
+    margin-left: 80%;
+  }
+  #navigation a{
+    text-align: right;
+  }
 }
 
 @media (max-width: 760px) {
