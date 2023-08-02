@@ -869,11 +869,11 @@ footer {
     width: 40%;
     padding: 0px;
     margin: 2%;   
-}
-#ir-arriba{
-  width: 7%;
-  left:92%;
-}
+  }
+  #ir-arriba{
+    width: 7%;
+    left:92%;
+  }
   #navigation{
     background-color: #000000;
   }
@@ -890,6 +890,18 @@ footer {
     border-radius: 3%;
     padding: 1%;
   } 
+  #medicos h3{
+    padding: 0px;
+    margin: 0px;
+  }
+  #medicos h5{
+    padding: 0px;
+    margin: 4px;
+  }
+  #medicos h6{
+    padding: 0px;
+    margin: 2px;
+  }
 }
 
 @media (max-width: 760px) {
