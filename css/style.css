@@ -245,7 +245,7 @@ footer {
     border-color: transparent;
 }
 .custom-navbar #logo-itec{
-  width: 70%;
+  width: 50%;
 }
 
 @media(min-width:768px) {
@@ -304,6 +304,8 @@ footer {
 #detail {
     background: #222;
     color: #ffffff;
+    width: 100%;
+    margin: 0px;
 }
 
 #detail .fa {
@@ -715,7 +717,26 @@ footer {
     color: #ffffff;
 }
 
+#mapa{
+  position: relative;
+  z-index: -1;
+}
+#datos-contacto{
+  position: absolute;
+  z-index: 1;
+  background-color: rgb(233, 230, 230);
+  width: 14vw;
+  margin-top: 40vh;
+  margin-left: 3vw;
+  border-radius: 3%;
+  padding: 1%;
+}
 
+#whatsapp-bottom{
+  background-color: #25D366;
+  width: 95%;
+  border-radius: 10px;
+}
 
 /*---------------------------------------
    Responsive styles            
@@ -734,6 +755,19 @@ footer {
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     width: 80%;
+  }
+  #mapa{
+    position: relative;
+    z-index: -1;
+  }
+  #datos-contacto{
+    position: absolute;
+    z-index: 1;
+    width: 20vw;
+    margin-top: 40vh;
+    margin-left: 3vw;
+    border-radius: 3%;
+    padding: 1%;
   }
 }
 
@@ -779,11 +813,21 @@ footer {
 }
 
 }
-
+@media (max-width: 899px) {
+  #datos-contacto{
+    position: absolute;
+    z-index: 1;
+    width: 30vw;
+    margin-top: 40vh;
+    margin-left: 3vw;
+    border-radius: 3%;
+    padding: 1%;
+  }
+}
 @media (max-width: 768px) {
 
   .custom-navbar {
-    height: 10%;
+    height: 15%;
   }
 
   #acercade img,
@@ -807,6 +851,14 @@ footer {
   #contact .contact_detail {
     margin-top: 82px;
   }
+
+  #detail {
+    background: #222;
+    color: #ffffff;
+    width: 100%;
+    margin-right: 0px;
+    background-position: center;
+  }
   #profesionales{
     text-align: center;
     align-content: center;
@@ -818,15 +870,26 @@ footer {
     padding: 0px;
     margin: 2%;   
 }
+#ir-arriba{
+  width: 7%;
+  left:92%;
+}
   #navigation{
     background-color: #000000;
   }
-  #navigation li{
-    margin-left: 80%;
-  }
   #navigation a{
-    text-align: right;
+    left: 60%;
+    text-justify: distribute;
   }
+  #datos-contacto{
+    position: absolute;
+    z-index: 1;
+    width: 30vw;
+    margin-top: -30vh;
+    margin-left: 3vw;
+    border-radius: 3%;
+    padding: 1%;
+  } 
 }
 
 @media (max-width: 760px) {
@@ -841,3 +904,31 @@ footer {
 
 }
 
+@media (max-width: 640px){
+  #datos-contacto{
+    position: absolute;
+    z-index: 1;
+    width: 40vw;
+    margin-top: -30vh;
+    margin-left: 3vw;
+    border-radius: 3%;
+    padding: 1%;
+  }
+}
+@media (max-width: 400px){
+  #datos-contacto{
+    position: absolute;
+    z-index: 1;
+    width: 100vw;
+    margin-top: 0vh;
+    margin-left: 3vw;
+    border-radius: 3%;
+    padding: 1%;
+  }
+  
+  #whatsapp-bottom{
+    background-color: #25D366;
+    width: 95%;
+    border-radius: 10px;
+  }   
+}
