@@ -98,7 +98,7 @@ footer {
 
 #inicio .btn,
 #contact .btn {
-    background-color: #f2545f;
+    background-color: rgb(230, 79, 64);
     border-radius: 5px;
     color: #ffffff;
     font-weight: 600;
@@ -113,11 +113,11 @@ footer {
 
 #inicio .btn-danger,
 #contact .btn-danger {
-    background: #f2545f;
+    background: rgb(230, 79, 64);
     border-color: transparent;
 }
 #whatsapp-top{
-  background-color: #25D366 !important;
+  background-color: rgb(48, 205, 113) !important;
 }
 
 #contact .btn {
@@ -312,7 +312,7 @@ footer {
 }
 
 #detail .fa {
-  color: #f2545f;
+  color: rgb(230, 79, 64);
   font-size: 48px;
 }
 
@@ -334,6 +334,7 @@ footer {
     background: #f9f9f9;
 }
 
+
 #profesionales h3 {
     font-size: 18px;
     margin-bottom: 0px;
@@ -352,8 +353,13 @@ footer {
   border-radius: 100%;
   border-style: solid;
   border-width: 5px;
-  border-color: #f2545f;
-  border-inline-color: blue;
+  border-color: rgb(230, 79, 64);
+  border-inline-color: rgb(52, 124, 184);
+  transition: 0.5s;
+}
+#profesionales img:hover{
+ border-color: rgb(52, 124, 184);
+
 }
 
 #profesionales .col-md-3 {
@@ -370,7 +376,7 @@ footer {
 }
 
 #medicos .btn-default {
-    background-color: #f2545f;
+    background-color: rgb(230, 79, 64);
     border-radius: 5px;
     color: #ffffff;
     font-weight: 600;
@@ -385,7 +391,7 @@ footer {
 }
 
 #medicos .btn-default:hover {
-  background: #2e40e4;
+  background: rgb(52, 124, 184);
   border-color: transparent;
 }
 
@@ -457,7 +463,7 @@ footer {
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
-  color: #f2545f;
+  color: rgb(230, 79, 64);
   cursor: default;
   background-color: transparent;
   border: 1px solid transparent;
@@ -651,7 +657,7 @@ footer {
 }
 
 #contact input[type="submit"]:hover {
-  background: #f2545f;
+  background: rgb(230, 79, 64);
 }
 
 
@@ -683,7 +689,7 @@ footer {
 }
 
 .go-top:hover {
-    background: #f2545f;
+    background: rgb(230, 79, 64);
     color: #ffffff;
 }
 
@@ -716,7 +722,7 @@ footer {
 }
 
 .social-icon li a:hover {
-    background: #f2545f;
+    background: rgb(230, 79, 64);
     color: #ffffff;
 }
 
@@ -736,7 +742,7 @@ footer {
 }
 
 #whatsapp-bottom{
-  background-color: #25D366;
+  background-color: rgb(48, 205, 113);
   width: 95%;
   border-radius: 10px;
 }
@@ -913,7 +919,7 @@ footer {
     height: 100vh;
   }
   #inicio .btn{
-    background-color: #f2545f;
+    background-color: rgb(230, 79, 64);
     width: 80%
   }
 
