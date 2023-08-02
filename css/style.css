@@ -116,6 +116,9 @@ footer {
     background: #f2545f;
     border-color: transparent;
 }
+#whatsapp-top{
+  background-color: #25D366 !important;
+}
 
 #contact .btn {
   border-radius: 100px;
