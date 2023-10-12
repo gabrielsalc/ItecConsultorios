@@ -74,7 +74,8 @@ a {
 }
 
 #detail, #video,
-#profesionales, 
+#profesionales,
+#speakers, 
 #program,
 #sponsors, 
 #contact, footer {
@@ -83,7 +84,7 @@ a {
 }
 
 #detail,
-#profesionales, #sponsors,
+#profesionales, #speakers, #sponsors,
 footer {
   text-align: center;
 }
@@ -445,7 +446,7 @@ footer {
 .nav-tabs {
   margin-bottom: 20px;
 }
-.nav-tabs > li {
+.nav-tabs > .liprogram > li {
   float: left;
   margin-bottom: -1px;
 }
@@ -456,6 +457,7 @@ footer {
   line-height: 1.42857143;
   border: none;
   border-radius: 0px;
+  max-width: 100%;
 }
 .nav-tabs > li > a:hover {
   background-color: transparent;
@@ -471,6 +473,68 @@ footer {
 }
 .tab-content {
   padding-top: 20px;
+}
+
+/* SERVICIOS */
+#servicios{
+  padding-top: 70px;
+  background: #f9f9f9;
+  /* border-left-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  border-style: dotted;
+  border-color: rgb(230, 79, 64); */
+}
+
+
+
+#speakers {
+  background: #f9f9f9
+}
+
+#speakers h3 {
+  font-size: 18px;
+  margin-bottom: 0px;
+}
+
+#speakers h6 {
+color: #666;
+margin-top: 4px;
+}
+
+#speakers img {
+width: 100%;
+max-width: 100%;
+height: auto;
+}
+
+#speakers .col-md-3 {
+  display: block;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  margin-bottom: 22px;
+}
+
+#speakers .speakers-wrapper {
+  background: #ffffff;
+  padding-bottom: 22px;
+}
+
+#whatsapp-eco{
+  background-color: rgb(48, 205, 113);
+  width: 30%;
+  border-radius: 10px;
+}
+
+/*            */
+#residencia{
+  background-color: #e8d4b5;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#residencia .item{
+  margin-bottom: 10px;
 }
 
 
@@ -923,6 +987,12 @@ footer {
     width: 80%
   }
 
+  #whatsapp-eco{
+    background-color: #25D366;
+    width: 45%;
+    border-radius: 10px;
+  }   
+
 }
 
 @media (max-width: 640px){
@@ -946,6 +1016,12 @@ footer {
     border-radius: 3%;
     padding: 1%;
   }
+
+  #whatsapp-eco{
+    background-color: #25D366;
+    width: 60%;
+    border-radius: 10px;
+  }   
   
   #whatsapp-bottom{
     background-color: #25D366;
