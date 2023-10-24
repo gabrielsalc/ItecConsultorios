@@ -121,6 +121,10 @@ footer {
   background-color: rgb(48, 205, 113) !important;
 }
 
+#botonservicios{
+  background-color: rgb(52, 124, 184) !important;
+}
+
 #contact .btn {
   border-radius: 100px;
 }
