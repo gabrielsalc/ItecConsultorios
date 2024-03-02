@@ -8,7 +8,7 @@
  		return $conexion;
  	}
  	else{
- 		echo "error de conexion";
+ 		echo "No se pudo establecer conexión con el servidor";
  	}
  }
 
