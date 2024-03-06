@@ -1,0 +1,24 @@
+#navbarestudios{
+    background-color: black;
+}
+#paciente{
+    text-align: left;
+}
+#titulo{
+    margin-top: 4%;
+    text-align: center;
+}
+#fotos .fotoarchivo{
+    max-width: 60%;
+    margin-top: 2%;
+}
+#fotos{
+    text-align: left;
+}
+#divarchivos .archivo{
+    width: 25%;
+    margin-top: 0.3%;
+}
+/* #divestudio{
+    text-align: left;
+} */

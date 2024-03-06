@@ -1,0 +1,45 @@
+#navbarlogin{
+    background-color: black;
+}
+
+#titleestudios{
+    text-align: center;
+}
+#letrasestudios{
+    text-align: center;
+}
+
+#formestudios{
+    text-align: right;
+}
+
+#botonlogin{
+    background-color: rgb(230, 79, 64);
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 100%;
+    padding: 14px 42px;
+    margin-top: 1%;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+}
+#botonlogin:hover {
+    background: #333333;
+    border-color: transparent;
+}
+#formdiv{
+    text-align: right;
+}
+
+#whatsapp-login{
+    background-color: rgb(48, 205, 113);
+    width: 25%;
+    border-radius: 10px;
+}
+
+#divbottom{
+    margin-top: 5%;
+}
