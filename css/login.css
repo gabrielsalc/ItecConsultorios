@@ -43,3 +43,43 @@
 #divbottom{
     margin-top: 5%;
 }
+@media (max-width: 1200px){
+    #titulo{
+        margin-top: 50% !important;
+        text-align: center;
+    } 
+    .custom-navbar .nav li a{
+        font-size: 10px !important;
+      }
+}
+@media (max-width: 1000px){
+    #divarchivos .archivo{
+        width: 50%;
+        margin-top: 0.3%;
+    }
+  #titulo{
+    margin-top: 8% !important;
+    text-align: center;
+    } 
+  .nav-tabs > li > a {
+    font-size: 13px;
+  }
+
+}
+@media (max-width: 991px){
+    #navigation{
+        margin-top: -4%;
+    }
+
+}
+@media (max-width: 660px){
+    #whatsapp-login{
+        width: 50%;
+    }
+}
+
+@media (max-width: 370px){
+    #whatsapp-login{
+        width: 100%;
+    }
+}

@@ -913,8 +913,8 @@ footer {
     padding-top: 32px;
   }
 
-  .nav-tabs > li > a {
-    font-size: 13px;
+  #navigation > li > a {
+    font-size: 13px !important;
   }
 
   #program img {

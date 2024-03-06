@@ -22,3 +22,122 @@
 /* #divestudio{
     text-align: left;
 } */
+
+@media (max-width: 1200px){
+    #titulo{
+        margin-top: 50% !important;
+        text-align: center;
+    } 
+    .custom-navbar .nav li a{
+        font-size: 10px !important;
+      }
+}
+@media (max-width: 1000px){
+    #divarchivos .archivo{
+        width: 50%;
+        margin-top: 0.3%;
+    }
+  #titulo{
+    margin-top: 8% !important;
+    text-align: center;
+    } 
+  .nav-tabs > li > a {
+    font-size: 13px;
+  }
+
+}
+@media (max-width: 991px){
+    #navigation{
+        margin-top: -4%;
+    }
+
+}
+@media (max-width: 780px){
+    #divarchivos .archivo{
+        width: 50%;
+        margin-top: 0.3%;
+    }
+  #titulo{
+    margin-top: 16% !important;
+    text-align: center;
+    } 
+
+
+}
+
+@media (max-width: 660px){
+    #divarchivos .archivo{
+        width: 50%;
+        margin-top: 0.3%;
+    }
+  #titulo{
+    margin-top: 20% !important;
+    text-align: center;
+    } 
+  .nav-tabs > li > a {
+    font-size: 13px;
+  }
+
+}
+
+@media (max-width: 530px){
+    #divarchivos .archivo{
+        width: 80%;
+        margin-top: 0.3%;
+    }
+  #titulo{
+    margin-top: 30% !important;
+    text-align: center;
+    } 
+  .nav-tabs > li > a {
+    font-size: 13px;
+  }
+
+}
+
+@media (max-width: 360px){
+    #divarchivos .archivo{
+        width: 100%;
+        margin-top: 0.3%;
+    }
+  #titulo{
+    margin-top: 40% !important;
+    text-align: center;
+    } 
+  .nav-tabs > li > a {
+    font-size: 13px;
+  }
+
+}
+
+@media (max-width: 290px){
+    #divarchivos .archivo{
+        width: 100%;
+        margin-top: 0.3%;
+        font-size: small;
+    }
+  #titulo{
+    margin-top: 50% !important;
+    text-align: center;
+    } 
+  .nav-tabs > li > a {
+    font-size: 13px;
+  }
+
+}
+
+@media (max-width: 230px){
+    #divarchivos .archivo{
+        width: 100%;
+        margin-top: 0.3%;
+        font-size: smaller;
+    }
+  #titulo{
+    margin-top: 50% !important;
+    text-align: center;
+    } 
+  .nav-tabs > li > a {
+    font-size: 13px;
+  }
+
+}
