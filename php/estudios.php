@@ -15,7 +15,7 @@
         $q_Estudios = "SELECT idestudi, descri, fecha FROM estudios WHERE idpacien = '$idpacien' ORDER BY fecha DESC";
         $Estudios = pg_query($conexion, $q_Estudios);
         $Filas = pg_affected_rows($Estudios);
-        if ($Filas > 1){   
+        if ($Filas > 0){   
             While($Datos = pg_fetch_row($Estudios)){
                 $IdEstudi = $Datos[0];
                 echo "<div id='divestudio' class='flex-row container col-md-12 col-sm-12 estudio'>
@@ -27,7 +27,7 @@
                 $q_Archivos = "SELECT idarchiv, titulo, archiv, extens FROM estudiosarchivos ea WHERE idestudi = '$IdEstudi'";
                 $Archivos = pg_query($conexion,$q_Archivos);
                 $FilasArchivos = pg_affected_rows($Archivos);
-                if ($FilasArchivos > 1){
+                if ($FilasArchivos > 0){
                     while($DatosArchiv = pg_fetch_row($Archivos)){  //mientras haya informacion, me escribira los resultados//
                         $id = $DatosArchiv[0];	
                         $Archivo = hex2bin(substr($DatosArchiv[2], 2));
