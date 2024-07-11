@@ -10,7 +10,7 @@
 
 function MostrarComponentes(id){
     var i;
-    for (i = 1; i < 24; i++) {
+    for (i = 1; i < 25; i++) {
         document.getElementById("medico" + i).hidden = true; 
         document.getElementById("seleccionar" + i).removeAttribute("hidden");  
     }
