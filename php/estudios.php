@@ -5,14 +5,16 @@
 	if (isset($_SESSION['usuario'])){   //si existe la sesion con el nombre de usuario entonces la pagina funciona//
         include_once('../html/estudios.html');
 		$conexion = conectar();   //me conecto a la base de datos//
-        $idpacien = $_SESSION['usuario'];
-        $nombre = $_SESSION['usuario'];
-        $q_Pacien = "SELECT pacien FROM pacientes WHERE idpacien = '$idpacien'";
-        $Paciente = pg_fetch_row(pg_query($conexion, $q_Pacien));
+        // $idpacien = $_SESSION['usuario'];
+        // $nombre = $_SESSION['usuario'];
+        // $q_Pacien = "SELECT pacien FROM pacientes WHERE idpacien = '$idpacien'";
+        $documento = $_SESSION['usuario'];
+        // $q_estudios
+        // $Paciente = pg_fetch_row(pg_query($conexion, $q_Pacien));
         echo    "<div id='titulo' class='flex-row container col-md-12 col-sm-12 paciente'>
-                    <h1>".strtoupper($Paciente[0])."</h1>
+                    <h1>".strtoupper($documento)."</h1>
                 </div>";
-        $q_Estudios = "SELECT idestudi, descri, fecha FROM estudios WHERE idpacien = '$idpacien' ORDER BY fecha DESC";
+        $q_Estudios = "SELECT idestudi, descri, fecha FROM estudios WHERE dni = $documento ORDER BY fecha DESC";
         $Estudios = pg_query($conexion, $q_Estudios);
         $Filas = pg_affected_rows($Estudios);
         if ($Filas > 0){   
