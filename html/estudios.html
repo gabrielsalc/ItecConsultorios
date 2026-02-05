@@ -47,6 +47,7 @@
         }
 
         .preloader {
+            transition: opacity 0.3s ease;
             position: fixed;
             inset: 0;
             background: white;
@@ -222,10 +223,19 @@
 
 <script>
 
-window.addEventListener("load", () => {
+document.addEventListener("DOMContentLoaded", function () {
 
-    document.getElementById("preloader")
-            .style.display = "none";
+    const preloader = document.getElementById("preloader");
+
+    if (preloader) {
+
+        preloader.style.opacity = "0";
+
+        setTimeout(() => {
+            preloader.remove();
+        }, 300);
+
+    }
 
 });
 
