@@ -8,13 +8,28 @@
 //     document.querySelector("#SeleccionarPerillo").innerHTML = "Solicitar Turno";
 // }
 
-function MostrarComponentes(id){
-    var i;
-    for (i = 1; i < 19; i++) {
-        document.getElementById("medico" + i).hidden = true; 
-        document.getElementById("seleccionar" + i).removeAttribute("hidden");  
-    }
-    document.getElementById("medico" + id).removeAttribute("hidden"); 
-    document.getElementById("seleccionar" + id).hidden = true;   
-}
+function MostrarComponentes(id) {
 
+    const MAX_MEDICOS = 18;
+
+    const seleccionado = document.getElementById("medico" + id);
+
+    if (!seleccionado) return;
+
+    const abrir = seleccionado.hasAttribute("hidden");
+
+    // ocultar todos
+    for (let i = 1; i <= MAX_MEDICOS; i++) {
+
+        const el = document.getElementById("medico" + i);
+
+        if (el) el.setAttribute("hidden", true);
+
+    }
+
+    // abrir solo si estaba cerrado
+    if (abrir) {
+        seleccionado.removeAttribute("hidden");
+    }
+
+}
