@@ -10,7 +10,7 @@
 
 function MostrarComponentes(id) {
 
-    const MAX_MEDICOS = 18;
+    const MAX_MEDICOS = 20;
 
     const seleccionado = document.getElementById("medico" + id);
 
