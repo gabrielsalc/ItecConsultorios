@@ -1,0 +1,5 @@
+# Bloquea archivos ocultos (.env, .git, .gitignore, etc.).
+# Es una segunda barrera: el .env igual tiene que estar fuera de la carpeta pública.
+<FilesMatch "^\.">
+    Require all denied
+</FilesMatch>

@@ -4,9 +4,8 @@
         exit('Acceso denegado.');
     }
 
-    include_once('/var/www/itecconsultorios.com.ar/html/php/funciones.php');
+    include_once(__DIR__ . '/funciones.php');
     $conexion = conectar();
     $q_insert = "INSERT INTO cronjobs (mensaje) VALUES (CONCAT('Mensaje enviado con cronjob ', NOW()));";
     $insert = pg_query($conexion, $q_insert);
-
-?>;
+?>

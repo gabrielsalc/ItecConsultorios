@@ -1,83 +1,19 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<header class="site-nav">
+  <div class="wrap nav-inner">
+    <a class="nav-logo" href="#inicio" aria-label="ITEC, ir al inicio">
+      <img src="images/itec.webp" alt="ITEC" width="200" height="83">
+    </a>
 
-<div class="container">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
 
-<a class="navbar-brand" href="#">
-<img src="images/itec.webp" height="40">
-</a>
-
-<button class="navbar-toggler"
-data-bs-toggle="collapse"
-data-bs-target="#nav">
-
-<span class="navbar-toggler-icon"></span>
-</button>
-
-<div class="collapse navbar-collapse" id="nav">
-
-<ul class="navbar-nav ms-auto">
-
-<li class="nav-item">
-<a class="nav-link" href="#inicio">Inicio</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="php/login.php">Estudios</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="#profesionales">Turnos</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="#servicios">Servicios</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="#residencia">Residencia</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="#ubicacion">Encuéntranos</a>
-</li>
-</ul>
-
-</div>
-
-</div>
-</nav>
-<!-- =========================
-     NAVIGATION LINKS     
-============================== 
-<div class="navbar navbar-fixed-top custom-navbar" role="navigation">
-	<div class="container">
-
-		 navbar header 
-		<div class="navbar-header">
-			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-				<span class="icon icon-bar"></span>
-				<span class="icon icon-bar"></span>
-				<span class="icon icon-bar"></span>
-			</button>
-			<a href="#" class="navbar-brand"><img src="images/itec.webp" id="logo-itec"></a>
-		</div>
-
-		<div class="collapse navbar-collapse">
-
-			<ul id="navigation" class="nav navbar-nav navbar-right">
-				<li><a href="#inicio" class="smoothScroll">Inicio</a></li>
-				<li><a href="php/login.php" class="smoothScroll">Estudios</a></li>
-				<li><a href="#profesionales" class="smoothScroll">Turnos</a></li>
-				<li><a href="#servicios" class="smoothScroll">Servicios</a></li>
-				<li><a href="#residencia" class="smoothScroll">Residencia</a></li>
-				<li><a href="#program" class="smoothScroll">Encuéntranos</a></li>
-				 <li><a href="#program" class="smoothScroll">Programs</a></li> 
-				 <li><a href="#register" class="smoothScroll">Register</a></li>
-				<li><a href="#venue" class="smoothScroll">Venue</a></li>
-				<li><a href="#sponsors" class="smoothScroll">Sponsors</a></li>
-				<li><a href="#contact" class="smoothScroll">Contact</a></li> 
-			</ul>
-
-		</div>
-
-	</div>
-</div> -->
+    <nav id="nav-links" class="nav-links" aria-label="Principal">
+      <a href="#profesionales">Turnos</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#residencia">Residencia</a>
+      <a href="#ubicacion">Cómo llegar</a>
+      <a class="btn btn-navy nav-cta" href="php/login.php"><i class="fa fa-file-text-o" aria-hidden="true"></i> Mis estudios</a>
+    </nav>
+  </div>
+</header>

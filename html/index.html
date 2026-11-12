@@ -1,1323 +1,294 @@
-<!-- =========================
-    INTRO SECTION   
-============================== -->
-<section id="inicio"
-         class="position-relative text-light text-center">
+<main id="contenido">
 
-    <!-- Fondo -->
-
-    <div class="position-absolute top-0 start-0 w-100 h-100"
-         style="
-            background:
-                linear-gradient(rgba(0,0,0,0.55),
-                                rgba(0,0,0,0.55)),
-                url('images/hero.jpg') center/cover no-repeat;
-            z-index: 0;">
+<!-- ================= HERO ================= -->
+<section id="inicio" class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <h1 class="hero-title">Instituto Tucumán de Enfermedades del Corazón</h1>
+      <p class="hero-lead">Consultas cardiológicas, estudios, hemodinamia, electrofisiología y cirugía cardiovascular en San Miguel de Tucumán.</p>
+      <div class="hero-actions">
+        <a class="btn btn-red btn-lg" href="#profesionales">Pedir turno</a>
+        <a class="btn btn-outline btn-lg" href="php/login.php">Ver mis estudios</a>
+      </div>
+      <a class="hero-wa" href="https://wa.me/5493815781253" target="_blank" rel="noopener">
+        <i class="fa fa-whatsapp" aria-hidden="true"></i> Escribinos por WhatsApp
+      </a>
     </div>
+    <figure class="hero-photo">
+      <img src="images/hallitec.jpg" alt="Recepción de ITEC en Maipú 574" width="2048" height="1536" fetchpriority="high">
+    </figure>
+  </div>
 
-
-    <!-- Contenido -->
-
-    <div class="container position-relative py-5"
-         style="z-index: 1;">
-
-        <div class="row justify-content-center">
-
-            <div class="col-lg-8">
-
-                <h1 class="display-4 fw-bold mb-4">
-
-                    ITEC Cardiología
-
-                </h1>
-
-                <p class="mb-5 text-light opacity-75">
-
-                    Atención cardiovascular especializada con
-                    profesionales y tecnología de excelencia.
-
-                </p>
-
-
-                <!-- Botonera -->
-
-                <div class="row g-3 justify-content-center">
-
-                    <div class="col-md-4">
-
-                        <a href="#profesionales"
-                           class="btn w-100 py-2 text-white"
-                           style="background:#e74c3c;">
-
-                            Solicitar turno
-
-                        </a>
-
-                    </div>
-
-
-                    <div class="col-md-4">
-
-                        <a href="https://wa.me/5493815781253"
-                           target="_blank"
-                           class="btn w-100 py-2 text-white"
-                           style="background:#2ecc71;">
-
-                            <i class="fa fa-whatsapp me-1"></i>
-                            WhatsApp
-
-                        </a>
-
-                    </div>
-
-
-                    <div class="col-md-4">
-
-                        <a href="#servicios"
-                           class="btn w-100 py-2 text-white"
-                           style="background:#3f7fb3;">
-
-                            Servicios
-
-                        </a>
-
-                    </div>
-
-
-                    <div class="col-md-6">
-
-                        <a href="php/login.php"
-                           class="btn w-100 py-2 text-white"
-                           style="background:#e74c3c;">
-
-                            Consulta tus estudios
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
+  <svg class="ecg" viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+    <path pathLength="1" d="M0 74 H250 q12 -14 24 0 H300 l8 10 l13 -70 l14 80 l10 -20 H390 q24 -30 48 0 H700 q12 -14 24 0 H750 l8 10 l13 -70 l14 80 l10 -20 H840 q24 -30 48 0 H1200"/>
+  </svg>
 </section>
 
-<!-- =========================
-    OVERVIEW SECTION   
-============================== -->
-<section id="acercade" class="py-5">
+<!-- ================= DATOS RÁPIDOS ================= -->
+<section class="facts" aria-label="Datos de contacto">
+  <div class="wrap facts-grid">
+    <div class="fact">
+      <i class="fa fa-map-marker" aria-hidden="true"></i>
+      <div>
+        <h2>Consultorios</h2>
+        <p>Maipú 574 PB, San Miguel de Tucumán</p>
+      </div>
+    </div>
+    <div class="fact">
+      <i class="fa fa-heartbeat" aria-hidden="true"></i>
+      <div>
+        <h2>Guardia las 24 horas</h2>
+        <p>Los 365 días en Sanatorio del Norte, Maipú 617</p>
+      </div>
+    </div>
+    <div class="fact">
+      <i class="fa fa-phone" aria-hidden="true"></i>
+      <div>
+        <h2>Teléfono</h2>
+        <p><a href="tel:+543814366479">436-6479</a> o <a href="https://wa.me/5493815781253" target="_blank" rel="noopener">WhatsApp</a></p>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <div class="container">
-
-        <div class="row align-items-center g-4">
-
-            <div class="col-lg-6 wow fadeInUp">
-
-                <h3 class="fw-bold mb-3">ITEC</h3>
-
-                <p class="text-muted">
-                    Somos una clínica especializada en cardiología ubicada en San Miguel de Tucumán.
-                </p>
-
-                <p class="text-muted">
-                    Realizamos cirugías cardiovasculares, ergometrías y diversos tratamientos para el cuidado de su corazón.
-                </p>
-
-            </div>
-
-            <div class="col-lg-6 text-center wow fadeInUp">
-
-                <img src="images/itecbanner.jpg"
-                     alt="Itec"
-                     class="img-fluid rounded shadow-sm">
-
-            </div>
-
-        </div>
-
+<!-- ================= PROFESIONALES ================= -->
+<section id="profesionales" class="section section-paper">
+  <div class="wrap">
+    <div class="section-head split">
+      <div>
+        <h2 class="section-title">Profesionales y turnos</h2>
+        <p class="section-lead">Elegí un profesional y pedí tu turno online. En cada ficha figura qué obras sociales atiende.</p>
+      </div>
+      <div class="quick-turns">
+        <p>Turnos para EcoDoppler y ergometría</p>
+        <a class="btn btn-wa" href="https://wa.me/5493815781253" target="_blank" rel="noopener"><i class="fa fa-whatsapp" aria-hidden="true"></i> Pedir por WhatsApp</a>
+      </div>
     </div>
 
-</section>
-
-
-<!-- =========================
-    DETAIL SECTION   
-============================== -->
-<section id="detail" class="py-5 text-light" style="background:#0f0f0f;">
-
-    <div class="container">
-
-        <div class="row g-5 text-center">
-
-            <div class="col-12 col-md-6 col-lg-4 wow fadeInLeft">
-
-                <i class="fa fa-group fs-1 mb-3" style="color:#c0392b;"></i>
-
-                <h5 class="fw-bold mb-3">Grupo Humano</h5>
-
-                <p class="text-secondary mb-0">
-                    Contamos con una amplia plantilla de profesionales de la salud,
-                    con gran determinación y amor por la medicina.
-                </p>
-
-            </div>
-
-
-
-            <div class="col-12 col-md-6 col-lg-4 wow fadeInUp">
-
-                <i class="fa fa-clock-o fs-1 mb-3" style="color:#c0392b;"></i>
-
-                <h5 class="fw-bold mb-3">24 Horas</h5>
-
-                <p class="text-secondary mb-1">
-                    Estamos a su disposición los 365 días del año.
-                </p>
-
-                <p class="text-secondary mb-0">
-                    Guardia Sanatorio del Norte — Maipú 617.
-                </p>
-
-            </div>
-
-
-
-            <div class="col-12 col-md-6 col-lg-4 wow fadeInRight">
-
-                <i class="fa fa-desktop fs-1 mb-3" style="color:#c0392b;"></i>
-
-                <h5 class="fw-bold mb-3">Tecnología</h5>
-
-                <p class="text-secondary mb-0">
-                    Instrumentos de última generación que garantizan
-                    diagnósticos precisos y la mejor atención.
-                </p>
-
-            </div>
-
-        </div>
-
+    <div class="doc-tools">
+      <label class="search">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <span class="sr-only">Buscar profesional</span>
+        <input id="buscar-medico" type="search" placeholder="Buscar por nombre o especialidad" autocomplete="off">
+      </label>
+      <div class="chips" role="group" aria-label="Filtrar por especialidad">
+        <button class="chip" type="button" data-grupo="todos" aria-pressed="true">Todos</button>
+        <button class="chip" type="button" data-grupo="cardio" aria-pressed="false">Cardiología</button>
+        <button class="chip" type="button" data-grupo="arritmias" aria-pressed="false">Arritmias</button>
+        <button class="chip" type="button" data-grupo="intervencion" aria-pressed="false">Hemodinamia y cirugía</button>
+        <button class="chip" type="button" data-grupo="otras" aria-pressed="false">Otras especialidades</button>
+      </div>
+      <p id="medicos-count" class="doc-count" aria-live="polite"></p>
     </div>
 
-</section>
-
-<!-- =========================
-    VIDEO SECTION   
-============================== -->
-<!-- <section id="video" class="parallax-section">
-	<div class="container">
-		<div class="row">
-
-			<div class="wow fadeInUp col-md-6 col-sm-10" data-wow-delay="1.3s">
-				<h2>Watch Video</h2>
-				<h3>Quisque ut libero sapien. Integer tellus nisl, efficitur sed dolor at, vehicula finibus massa. Sed tincidunt metus sed eleifend suscipit.</h3>
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet consectetuer diam nonummy.</p>
-			</div>
-			<div class="wow fadeInUp col-md-6 col-sm-10" data-wow-delay="1.6s">
-				<div class="embed-responsive embed-responsive-16by9">
-					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/XDPwXQjAlB0" allowfullscreen></iframe>
-				</div>
-			</div>
-
-		</div>
-	</div>
-</section> -->
-
-
-<!-- =========================
-    Profesionales SECTION   
-============================== -->
-
-<section id="profesionales" class="py-5 bg-light">
-
-	<div class="container">
-		<div class="text-center mb-5">
-			<h2 class="fw-bold">Nuestros Profesionales</h2>
-			<p class="text-muted">"Al final, al único que le importa que tengas un buen corazón es a tu cardiólogo."</p>
-		</div>
-		<div class="row text-center mb-5 g-4">
-			<div class="col-md-6">
-				<h5>Turnos EcoDoppler</h5>
-				<a href="https://wa.me/5493815781253" target="_blank" class="btn btn-success">WhatsApp</a>
-			</div>
-			<div class="col-md-6">
-				<h5>Turnos Ergometrías</h5>
-				<a href="https://wa.me/5493815781253" target="_blank" class="btn btn-success">WhatsApp</a>
-			</div>
-		</div>
-
-		<div id="medicos" class="row g-4">
-
-			<!-- MEDICO 1 -->
-			<div class="col-md-6 col-lg-3 wow fadeInUp">
-				<div class="card h-100 shadow-sm">
-				<img src="images/AlvaroSoriano.jpg" class="card-img-top">
-					<div class="card-body text-center">
-						<h6 class="fw-bold">Alvaro Martín Soriano</h6>
-						<p class="small text-muted">Cardiología — EcoDoppler — ECG</p>
-
-						<button class="btn btn-primary btn-sm" onclick="MostrarComponentes(1)">Seleccionar</button>
-						<div id="medico1" hidden class="mt-3 text-start">
-
-							<h6>Obras sociales</h6>
-							<p>Recibe todas por colegio médico</p>
-							<p>Descuento a pacientes de PAMI</p>
-
-							<a href="http://181.14.240.149/medexisportal/?to=9&cp=7YVNEXZ27PFHORPH" target="_blank" class="btn btn-success btn-sm mt-2">
-							Solicitar turno
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<!-- MEDICO 2 -->
-
-			<div class="col-md-6 col-lg-3 wow fadeInUp">
-				<div class="card h-100 shadow-sm">
-				<img src="images/AgustinPerillo.jpeg" class="card-img-top">
-				<div class="card-body text-center">
-
-					<h6 class="fw-bold">Daniel Agustin Perillo</h6>
-					<p class="small text-muted">Cardiología — Mapa y Holter</p>
-
-					<button class="btn btn-primary btn-sm" onclick="MostrarComponentes(2)">Seleccionar</button>
-
-					<div id="medico2" hidden class="mt-3 text-start">
-
-						<p>Recibe todas por colegio médico</p>
-						<p>No recibe: Osde — Ospia</p>
-
-						<a href="http://181.14.240.149/medexisportal/?to=9&cp=HB2PB12CGGJXUQGY" target="_blank" class="btn btn-success btn-sm mt-2">
-						Solicitar turno
-						</a>
-
-					</div>
-
-				</div>
-				</div>
-			</div>
-
-
-
-			<!-- MEDICO 3 -->
-
-			
-
-			<div class="col-md-6 col-lg-3 wow fadeInUp">
-				<div class="card h-100 shadow-sm">
-
-					<img src="images/CarlosSoriano.jpg" class="card-img-top">
-
-					<div class="card-body text-center">
-
-						<h6 class="fw-bold">Carlos Soriano</h6>
-						<p class="small text-muted">
-							Cardiología — EcoDoppler
-						</p>
-
-						<button class="btn btn-primary btn-sm"
-								onclick="MostrarComponentes(9)">
-							Seleccionar
-						</button>
-
-						<div id="medico9" hidden class="mt-3 text-start">
-
-							<p>Recibe todas por colegio médico</p>
-							<p>Extra: Osde</p>
-							<p>No recibe: Prensa — Boreal</p>
-
-							<a href="http://181.14.240.149/medexisportal/?to=9&cp=QENHT2G0UHRQLUID"
-							target="_blank"
-							class="btn btn-success btn-sm mt-2">
-								Solicitar turno
-							</a>
-
-						</div>
-
-					</div>
-				</div>
-			</div>
-
-			<div class="col-md-6 col-lg-3 wow fadeInUp">
-				<div class="card h-100 shadow-sm">
-
-					<img src="images/luciacordoba.jpg" class="card-img-top">
-
-					<div class="card-body text-center">
-
-						<h6 class="fw-bold">Lucía Córdoba</h6>
-						<p class="small text-muted">Cirugía general - Esp. en Flebología</p>
-
-						<button class="btn btn-primary btn-sm" onclick="MostrarComponentes(8)">Seleccionar</button>
-
-						<div id="medico8" hidden class="mt-3 text-start">
-<!-- 
-							<p>Recibe todas por colegio médico</p>
-							<p>Boreal — Ospe — Red Seguros</p> -->
-
-							<a href="http://181.14.240.149/medexisportal/?to=9&cp=D0FFE7FD521B3691"
-							target="_blank"
-							class="btn btn-success btn-sm mt-2">
-							Solicitar turno
-							</a>
-
-						</div>
-
-					</div>
-				</div>
-			</div> 
-
-			<!-- MEDICO PSICO -->
-
-
-
-
-			<div class="col-md-6 col-lg-3 wow fadeInUp">
-			<div class="card h-100 shadow-sm">
-
-			<img src="images/pallares.jpg" class="card-img-top">
-
-			<div class="card-body text-center">
-
-			<h6 class="fw-bold">Andrea Pallares</h6>
-			<p class="small text-muted">Cardiología — Mapa y Holter</p>
-
-			<button class="btn btn-primary btn-sm" onclick="MostrarComponentes(5)">Seleccionar</button>
-
-			<div id="medico5" hidden class="mt-3 text-start">
-
-			<p>Recibe todas por colegio médico</p>
-
-			<a href="http://181.14.240.149/medexisportal/?to=9&cp=SRHSWPQYWZQCARHE"
-			target="_blank"
-			class="btn btn-success btn-sm mt-2">
-			Solicitar turno
-			</a>
-
-			</div>
-
-			</div>
-			</div>
-			</div>
-
-
-
-			<div class="col-md-6 col-lg-3 wow fadeInUp">
-			<div class="card h-100 shadow-sm">
-
-			<img src="images/edgardosalica.jpg" class="card-img-top">
-
-			<div class="card-body text-center">
-
-			<h6 class="fw-bold">Gabriel Edgardo Salica</h6>
-			<p class="small text-muted">Cardiología — Electrofisiología</p>
-
-			<button class="btn btn-primary btn-sm" onclick="MostrarComponentes(6)">Seleccionar</button>
-
-			<div id="medico6" hidden class="mt-3 text-start">
-
-			<p>Recibe todas por colegio médico</p>
-
-			<a href="http://181.14.240.149/medexisportal/?to=9&cp=0MVGM64AKOKKW1BJ"
-			target="_blank"
-			class="btn btn-success btn-sm mt-2">
-			Solicitar turno
-			</a>
-
-			</div>
-
-			</div>
-			</div>
-			</div>
-
-
-
-
-
-
-
-			
-
-
-			<div class="col-md-6 col-lg-3 wow fadeInUp">
-			<div class="card h-100 shadow-sm">
-
-			<img src="images/AlejandroMartinez.png" class="card-img-top">
-
-			<div class="card-body text-center">
-
-			<h6 class="fw-bold">Alejandro Mario Martínez</h6>
-			<p class="small text-muted">Cardiología Intervencionista</p>
-
-			<button class="btn btn-primary btn-sm" onclick="MostrarComponentes(7)">Seleccionar</button>
-
-			<div id="medico7" hidden class="mt-3 text-start">
-
-			<p>Recibe todas por colegio médico</p>
-			<p>Extra: Red de Seguros Médicos</p>
-
-			<a href="http://181.14.240.149/medexisportal/?to=9&cp=GTKKSRUHOC1JVJNZ"
-			target="_blank"
-			class="btn btn-success btn-sm mt-2">
-			Solicitar turno
-			</a>
-
-			</div>
-
-			</div>
-			</div>
-			</div>
-			<!-- FIN SEGUNDO GRUPO -->
-			        <!-- ===== TERCERA FILA ===== -->
-
-			<div class="col-md-6 col-lg-3 wow fadeInUp">
-			<div class="card h-100 shadow-sm">
-
-			<img src="images/EstebanAvila.jpg" class="card-img-top">
-
-			<div class="card-body text-center">
-
-			<h6 class="fw-bold">Esteban Mario Ávila</h6>
-			<p class="small text-muted">Arritmias — Marcapasos</p>
-
-			<button class="btn btn-primary btn-sm" onclick="MostrarComponentes(3)">Seleccionar</button>
-
-			<div id="medico3" hidden class="mt-3 text-start">
-
-			<p>Recibe todas por colegio médico</p>
-			<p>Extras: Osde — Swiss — Galeno — otros</p>
-			<p>No recibe: Ospe — Boreal</p>
-
-			<a href="http://181.14.240.149/medexisportal/?to=9&cp=NKXHQCJDMEDLAGGS" target="_blank" class="btn btn-success btn-sm mt-2">
-			Solicitar turno
-			</a>
-
-			</div>
-
-			</div>
-			</div>
-			</div>				
-
-
-						<div class="col-md-6 col-lg-3 wow fadeInUp">
-			<div class="card h-100 shadow-sm">
-
-			<img src="images/deheza.jpeg" class="card-img-top">
-
-			<div class="card-body text-center">
-
-			<h6 class="fw-bold">Valentina Deheza</h6>
-			<p class="small text-muted">Especialista en Medicina Familiar</p>
-
-			<button class="btn btn-primary btn-sm" onclick="MostrarComponentes(18)">Seleccionar</button>
-
-			<div id="medico18" hidden class="mt-3 text-start">
-
-			<a href="http://181.14.240.149/medexisportal/?to=9&cp=DB57EA85E6FCEB58"
-							target="_blank"
-					class="btn btn-success btn-sm mt-2">
-						Solicitar turno
-					</a>
-
-			</div>
-
-			</div>
-			</div>
-			</div>
-
-
-			<div class="col-md-6 col-lg-3 wow fadeInUp">
-				<div class="card h-100 shadow-sm">
-
-					<img src="images/SantiagoAlonso.jpg" class="card-img-top">
-
-					<div class="card-body text-center">
-
-						<h6 class="fw-bold">Santiago Javier Alonso</h6>
-						<p class="small text-muted">
-							Nefrología
-						</p>
-
-						<button class="btn btn-primary btn-sm"
-								onclick="MostrarComponentes(10)">
-							Seleccionar
-						</button>
-
-						<div id="medico10" hidden class="mt-3 text-start">
-
-							<p>Recibe todas las obras sociales</p>
-							<p>Excepto: Swiss Medical</p>
-
-							<a href="http://181.14.240.149/medexisportal/?to=9&cp=3XNP3JBRPN8VDM"
-							target="_blank"
-							class="btn btn-success btn-sm mt-2">
-								Solicitar turno
-							</a>
-
-						</div>
-
-					</div>
-				</div>
-			</div>
-
-
-
-			<div class="col-md-6 col-lg-3 wow fadeInUp">
-				<div class="card h-100 shadow-sm">
-
-					<img src="images/AlonsoEnrique2.jpeg" class="card-img-top">
-
-					<div class="card-body text-center">
-
-						<h6 class="fw-bold">Enrique Luis F. Alonso</h6>
-						<p class="small text-muted">
-							Cardiología — EcoDoppler
-						</p>
-
-						<button class="btn btn-primary btn-sm"
-								onclick="MostrarComponentes(11)">
-							Seleccionar
-						</button>
-
-						<div id="medico11" hidden class="mt-3 text-start">
-
-							<p>Recibe todas por colegio médico</p>
-
-							<a href="http://181.14.240.149/medexisportal/?to=9&cp=ILGP6CUXUBZLLWJZ"
-							target="_blank"
-							class="btn btn-success btn-sm mt-2">
-								Solicitar turno
-							</a>
-
-						</div>
-
-					</div>
-				</div>
-			</div>
-
-
-
-			<div class="col-md-6 col-lg-3 wow fadeInUp">
-				<div class="card h-100 shadow-sm">
-
-					<img src="images/BrunoAllori.jpeg" class="card-img-top">
-
-					<div class="card-body text-center">
-
-						<h6 class="fw-bold">Bruno Nicolás Allori</h6>
-						<p class="small text-muted">
-							Cirugía Cardiovascular
-						</p>
-
-						<button class="btn btn-primary btn-sm"
-								onclick="MostrarComponentes(12)">
-							Seleccionar
-						</button>
-
-						<div id="medico12" hidden class="mt-3 text-start">
-
-							<p>Recibe todas por colegio médico</p>
-
-							<a href="http://181.14.240.149/medexisportal/?to=9&cp=TEI5JWQAZQZHOPHQ"
-							target="_blank"
-							class="btn btn-success btn-sm mt-2">
-								Solicitar turno
-							</a>
-
-						</div>
-
-					</div>
-				</div>
-			</div> <!-- FIN TERCER GRUPO -->
-
-			        <!-- ===== CUARTA FILA ===== -->
-
-			<div class="col-md-6 col-lg-3 wow fadeInUp">
-				<div class="card h-100 shadow-sm">
-
-					<img src="images/LuisPellegrini.jpeg" class="card-img-top">
-
-					<div class="card-body text-center">
-
-						<h6 class="fw-bold">Luis Ernesto Pellegrini</h6>
-						<p class="small text-muted">
-							Cardiología — Mapa y Holter
-						</p>
-
-						<button class="btn btn-primary btn-sm"
-								onclick="MostrarComponentes(13)">
-							Seleccionar
-						</button>
-
-						<div id="medico13" hidden class="mt-3 text-start">
-
-							<p>Recibe todas por colegio médico</p>
-							<p>No recibe: Swiss — Osde — Boreal</p>
-
-							<a href="http://181.14.240.149/medexisportal/?to=9&cp=CQNFMFD0FRDSGDYI"
-							target="_blank"
-							class="btn btn-success btn-sm mt-2">
-								Solicitar turno
-							</a>
-
-						</div>
-
-					</div>
-				</div>
-			</div>
-
-
-
-			<div class="col-md-6 col-lg-3 wow fadeInUp">
-				<div class="card h-100 shadow-sm">
-
-					<img src="images/ciliberti.png" class="card-img-top">
-
-					<div class="card-body text-center">
-
-						<h6 class="fw-bold">Alejandra Ciliberti</h6>
-						<p class="small text-muted">
-							Neumonología
-						</p>
-
-						<button class="btn btn-primary btn-sm"
-								onclick="MostrarComponentes(14)">
-							Seleccionar
-						</button>
-
-						<div id="medico14" hidden class="mt-3 text-start">
-
-							<p>Recibe todas por colegio médico</p>
-							<p>Extra: Prensa — Osde</p>
-
-							<a href="http://181.14.240.149/medexisportal/?to=9&cp=ZFA6W6EDEGTCLQPA"
-							target="_blank"
-							class="btn btn-success btn-sm mt-2">
-								Solicitar turno
-							</a>
-
-						</div>
-
-					</div>
-				</div>
-			</div>
-
-
-
-			<div class="col-md-6 col-lg-3 wow fadeInUp">
-				<div class="card h-100 shadow-sm">
-
-					<img src="images/VeronicaRoldan.jpeg" class="card-img-top">
-
-					<div class="card-body text-center">
-
-						<h6 class="fw-bold">Verónica María Roldán</h6>
-						<p class="small text-muted">
-							Cardiología — Mapa y Holter
-						</p>
-
-						<button class="btn btn-primary btn-sm"
-								onclick="MostrarComponentes(15)">
-							Seleccionar
-						</button>
-
-						<div id="medico15" hidden class="mt-3 text-start">
-
-							<p>Recibe todas por colegio médico</p>
-
-							<a href="http://181.14.240.149/medexisportal/?to=9&cp=LQYVQLRUTBZIIZCG"
-							target="_blank"
-							class="btn btn-success btn-sm mt-2">
-								Solicitar turno
-							</a>
-
-						</div>
-
-					</div>
-				</div>
-			</div>
-
-
-
-			<div class="col-md-6 col-lg-3 wow fadeInUp">
-				<div class="card h-100 shadow-sm">
-
-					<img src="images/FelixAlbano.png" class="card-img-top">
-
-					<div class="card-body text-center">
-
-						<h6 class="fw-bold">Felix Albano</h6>
-						<p class="small text-muted">
-							Cardiología — Electrofisiología
-						</p>
-
-						<button class="btn btn-primary btn-sm"
-								onclick="MostrarComponentes(16)">
-							Seleccionar
-						</button>
-
-						<div id="medico16" hidden class="mt-3 text-start">
-
-							<p>Recibe todas por colegio médico</p>
-							<p>Extra: Osde — Prensa — Swiss — ATSA — Asispre</p>
-
-							<a href="http://181.14.240.149/medexisportal/?to=9&cp=S/EG4/XXAJFIRTWR"
-							target="_blank"
-							class="btn btn-success btn-sm mt-2">
-								Solicitar turno
-							</a>
-
-						</div>
-
-					</div>
-				</div>
-			</div>
-
-
-
-			<!-- ===== QUINTA FILA ===== -->
-
-			<div class="col-md-6 col-lg-3 wow fadeInUp">
-				<div class="card h-100 shadow-sm">
-
-					<img src="images/PaolaMerino.jpg" class="card-img-top">
-
-					<div class="card-body text-center">
-
-						<h6 class="fw-bold">Paola María Merino</h6>
-						<p class="small text-muted">
-							Cardiología — Mapa y Holter
-						</p>
-
-						<button class="btn btn-primary btn-sm"
-								onclick="MostrarComponentes(17)">
-							Seleccionar
-						</button>
-
-						<div id="medico17" hidden class="mt-3 text-start">
-
-							<p>Recibe todas por colegio médico</p>
-							<p>Extra: Ospia</p>
-							<p>No recibe: Osde</p>
-
-							<a href="http://181.14.240.149/medexisportal/?to=9&cp=8YGABO5QFUHS7YPV"
-							target="_blank"
-							class="btn btn-success btn-sm mt-2">
-								Solicitar turno
-							</a>
-
-						</div>
-
-					</div>
-				</div>
-			</div>
-
-
-
-			<div class="col-md-6 col-lg-3 wow fadeInUp">
-				<div class="card h-100 shadow-sm">
-
-					<img src="images/CeciliaPerez.jpeg" class="card-img-top">
-
-					<div class="card-body text-center">
-
-						<h6 class="fw-bold">María Celia Perez</h6>
-						<p class="small text-muted">
-							Cardiología — Ergometría
-						</p>
-
-						<button class="btn btn-primary btn-sm"
-								onclick="MostrarComponentes(4)">
-							Seleccionar
-						</button>
-
-						<div id="medico4" hidden class="mt-3 text-start">
-
-							<p>No recibe múltiples obras sociales</p>
-
-							<a href="http://181.14.240.149/medexisportal/?to=9&cp=Q1FLN1ASB7HRCVFU"
-							target="_blank"
-							class="btn btn-success btn-sm mt-2">
-								Solicitar turno
-							</a>
-
-						</div>
-
-					</div>
-				</div>
-			</div>
-
-			<div class="col-md-6 col-lg-3 wow fadeInUp">
-				<div class="card h-100 shadow-sm">
-
-					<img src="images/geroalonso.jpeg" class="card-img-top">
-
-					<div class="card-body text-center">
-
-						<h6 class="fw-bold">Geronimo Alonso</h6>
-						<p class="small text-muted">
-							Cardiología — Hemodinamia
-						</p>
-
-						<button class="btn btn-primary btn-sm"
-								onclick="MostrarComponentes(19)">
-							Seleccionar
-						</button>
-
-						<div id="medico19" hidden class="mt-3 text-start">
-
-							<p>Recibe Obras sociales por colegio medico</p>
-
-							<a href="http://181.14.240.149/medexisportal/?to=9&cp=4E8EDEB0A3B82A70"
-							target="_blank"
-							class="btn btn-success btn-sm mt-2">
-								Solicitar turno
-							</a>
-
-						</div>
-
-					</div>
-				</div>
-			</div>
-
-			<div class="col-md-6 col-lg-3 wow fadeInUp">
-				<div class="card h-100 shadow-sm">
-
-					<img src="images/clarisaaguirre.jpeg" class="card-img-top">
-
-					<div class="card-body text-center">
-
-						<h6 class="fw-bold">Clarisa Aguirre</h6>
-						<p class="small text-muted">
-							Lic. en Nutrición. Enfermedades Cardiovasculares - Obesidad - Diabetes
-						</p>
-
-						<button class="btn btn-primary btn-sm"
-								onclick="MostrarComponentes(20)">
-							Seleccionar
-						</button>
-
-						<div id="medico20" hidden class="mt-3 text-start">
-
-							<p>Solo Particular</p>
-
-							<a href="http://181.14.240.149/medexisportal/?to=9&cp=60A9E0A4FCBE12E7"
-							target="_blank"
-							class="btn btn-success btn-sm mt-2">
-								Solicitar turno
-							</a>
-
-						</div>
-
-					</div>
-				</div>
-			</div>
-
-
-		</div> <!-- DIV DE MEDICOS-->
-
-	</div>
-
-</section>
-
-
-
-<!-- =========================
-    PROGRAM SECTION   
-============================== > -->
-	<section id="servicios" class="py-5">
-
-    <div class="container">
-
-        <div class="text-center mb-5 wow fadeInUp">
-
-            <h2 class="fw-bold">Nuestros Servicios</h2>
-
-            <p class="text-muted">
-                Ofrecemos una amplia variedad de servicios,
-                conducidos por los mejores profesionales de la salud.
-            </p>
-
+    <div id="medicos" class="doc-grid">
+<?php
+$medicos = include __DIR__ . '/../php/medicos.php';
+$e = function ($s) { return htmlspecialchars($s, ENT_QUOTES, 'UTF-8'); };
+foreach ($medicos as $m):
+?>
+      <article class="doc" data-grupo="<?= $e($m['grupo']) ?>">
+        <img class="doc-photo" src="images/<?= $e($m['foto']) ?>" alt="<?= $e($m['nombre']) ?>, <?= $e($m['especialidad']) ?>" loading="lazy" width="400" height="400">
+        <div class="doc-body">
+          <h3 class="doc-name"><?= $e($m['nombre']) ?></h3>
+          <p class="doc-spec"><?= $e($m['especialidad']) ?></p>
+<?php if ($m['cobertura']): ?>
+          <ul class="doc-cov">
+<?php foreach ($m['cobertura'] as $c): ?>
+            <li><?= $e($c) ?></li>
+<?php endforeach; ?>
+          </ul>
+<?php else: ?>
+          <p class="doc-cov doc-cov--empty">Consultá obras sociales al pedir turno</p>
+<?php endif; ?>
+          <a class="btn btn-red btn-block" href="http://181.14.240.149/medexisportal/?to=9&amp;cp=<?= $e($m['turno']) ?>" target="_blank" rel="noopener nofollow">Pedir turno</a>
         </div>
+      </article>
+<?php endforeach; ?>
+    </div>
 
+    <div id="medicos-vacio" class="doc-empty" hidden>
+      <p>Ningún profesional coincide con «<span data-q></span>». Probá con otra especialidad o consultanos por WhatsApp.</p>
+      <a class="btn btn-wa" href="https://wa.me/5493815781253" target="_blank" rel="noopener"><i class="fa fa-whatsapp" aria-hidden="true"></i> Consultar por WhatsApp</a>
+    </div>
+  </div>
+</section>
 
-        <!-- Tabs -->
+<!-- ================= SERVICIOS ================= -->
+<section id="servicios" class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="section-title">Servicios</h2>
+      <p class="section-lead">Cada servicio tiene su propio equipo, horario y canal de turnos.</p>
+    </div>
 
-        <ul class="nav nav-pills justify-content-center mb-4 flex-wrap wow fadeInUp"
-            role="tablist">
+    <div class="svc">
+      <div class="svc-tabs" role="tablist" aria-label="Servicios" aria-orientation="vertical">
+        <button class="svc-tab" role="tab" id="t-hemo" aria-controls="p-hemo" aria-selected="true">Hemodinamia</button>
+        <button class="svc-tab" role="tab" id="t-eco" aria-controls="p-eco" aria-selected="false" tabindex="-1">Ecocardiografía</button>
+        <button class="svc-tab" role="tab" id="t-electro" aria-controls="p-electro" aria-selected="false" tabindex="-1">Electrofisiología</button>
+        <button class="svc-tab" role="tab" id="t-cirugia" aria-controls="p-cirugia" aria-selected="false" tabindex="-1">Cirugía cardiovascular</button>
+        <button class="svc-tab" role="tab" id="t-ergo" aria-controls="p-ergo" aria-selected="false" tabindex="-1">Ergometría</button>
+        <button class="svc-tab" role="tab" id="t-uco" aria-controls="p-uco" aria-selected="false" tabindex="-1">Unidad coronaria</button>
+      </div>
 
-            <li class="nav-item">
-                <button class="nav-link active"
-                        data-bs-toggle="pill"
-                        data-bs-target="#hemodinamia">
-                    Hemodinamia
-                </button>
-            </li>
+      <div class="svc-panels">
+        <article class="svc-panel" role="tabpanel" id="p-hemo" aria-labelledby="t-hemo">
+          <img src="images/Hemodinamia.jpg" alt="Equipo de hemodinamia durante un procedimiento" loading="lazy">
+          <div class="svc-info">
+            <h3>Cardiología intervencionista</h3>
+            <dl class="svc-meta">
+              <div><dt>Horario</dt><dd>8:30 a 14:00</dd></div>
+              <div><dt>Dirección</dt><dd>Corrientes 654</dd></div>
+              <div><dt>Equipo</dt><dd>Dr. Romero y Dr. Martínez</dd></div>
+            </dl>
+            <ul class="svc-list">
+              <li>Cinecoronariografía</li>
+              <li>Arteriografía periférica</li>
+              <li>Angioplastia transluminal</li>
+              <li>Implante TAVI</li>
+            </ul>
+            <a class="btn btn-wa" href="https://wa.me/5493814860896" target="_blank" rel="noopener"><i class="fa fa-whatsapp" aria-hidden="true"></i> Pedir turno por WhatsApp</a>
+          </div>
+        </article>
 
-            <li class="nav-item">
-                <button class="nav-link"
-                        data-bs-toggle="pill"
-                        data-bs-target="#ecocardiografia">
-                    Ecocardiografía
-                </button>
-            </li>
+        <article class="svc-panel" role="tabpanel" id="p-eco" aria-labelledby="t-eco" hidden>
+          <img src="images/ecografia.jpg" alt="Sala de ecocardiografía" loading="lazy">
+          <div class="svc-info">
+            <h3>Eco Doppler cardíaco y vascular</h3>
+            <dl class="svc-meta">
+              <div><dt>Horario</dt><dd>8:00 a 19:00</dd></div>
+              <div><dt>Dirección</dt><dd>Maipú 574</dd></div>
+              <div><dt>Equipo</dt><dd>Equipo cardiológico de ITEC</dd></div>
+            </dl>
+            <a class="btn btn-wa" href="https://wa.me/5493815781253" target="_blank" rel="noopener"><i class="fa fa-whatsapp" aria-hidden="true"></i> Pedir turno por WhatsApp</a>
+          </div>
+        </article>
 
-            <li class="nav-item">
-                <button class="nav-link"
-                        data-bs-toggle="pill"
-                        data-bs-target="#electrofisiologia">
-                    Electrofisiología
-                </button>
-            </li>
+        <article class="svc-panel" role="tabpanel" id="p-electro" aria-labelledby="t-electro" hidden>
+          <img src="images/electrofisiologia.jpg" alt="Equipamiento de electrofisiología" loading="lazy">
+          <div class="svc-info">
+            <h3>Electrofisiología</h3>
+            <ul class="svc-list">
+              <li>Marcapasos</li>
+              <li>Ablaciones</li>
+              <li>Mapeo con sistema ENSITE</li>
+            </ul>
+            <a class="btn btn-wa" href="https://wa.me/5493814860896" target="_blank" rel="noopener"><i class="fa fa-whatsapp" aria-hidden="true"></i> Pedir turno por WhatsApp</a>
+          </div>
+        </article>
 
-            <li class="nav-item">
-                <button class="nav-link"
-                        data-bs-toggle="pill"
-                        data-bs-target="#vascular">
-                    Cirugía Cardiovascular
-                </button>
-            </li>
+        <article class="svc-panel" role="tabpanel" id="p-cirugia" aria-labelledby="t-cirugia" hidden>
+          <img src="images/cirugiacardiovascular.jpg" alt="Cirugía cardiovascular en quirófano" loading="lazy">
+          <div class="svc-info">
+            <h3>Cirugía cardiovascular</h3>
+            <ul class="svc-list">
+              <li>Bypass coronario</li>
+              <li>Recambios valvulares</li>
+            </ul>
+            <a class="btn btn-wa" href="https://wa.me/5493814860896" target="_blank" rel="noopener"><i class="fa fa-whatsapp" aria-hidden="true"></i> Pedir turno por WhatsApp</a>
+          </div>
+        </article>
 
-            <li class="nav-item">
-                <button class="nav-link"
-                        data-bs-toggle="pill"
-                        data-bs-target="#ergometria">
-                    Ergometría
-                </button>
-            </li>
+        <article class="svc-panel" role="tabpanel" id="p-ergo" aria-labelledby="t-ergo" hidden>
+          <img src="images/itecbanner.jpg" alt="Cartel de ITEC en la recepción" loading="lazy">
+          <div class="svc-info">
+            <h3>Ergometría y deportología</h3>
+            <dl class="svc-meta">
+              <div><dt>Horario</dt><dd>9:00 a 13:00</dd></div>
+              <div><dt>Dirección</dt><dd>Maipú 574</dd></div>
+              <div><dt>Equipo</dt><dd>Dra. Celia Pérez</dd></div>
+            </dl>
+            <a class="btn btn-wa" href="https://wa.me/5493815781253" target="_blank" rel="noopener"><i class="fa fa-whatsapp" aria-hidden="true"></i> Pedir turno por WhatsApp</a>
+          </div>
+        </article>
 
-            <li class="nav-item">
-                <button class="nav-link"
-                        data-bs-toggle="pill"
-                        data-bs-target="#coronaria">
-                    Unidad Coronaria
-                </button>
-            </li>
+        <article class="svc-panel" role="tabpanel" id="p-uco" aria-labelledby="t-uco" hidden>
+          <img src="images/Hemodinamia2.jpg" alt="Equipo médico de ITEC" loading="lazy">
+          <div class="svc-info">
+            <h3>Unidad coronaria</h3>
+            <p>Atención especializada las 24 horas.</p>
+            <a class="btn btn-wa" href="https://wa.me/5493814860896" target="_blank" rel="noopener"><i class="fa fa-whatsapp" aria-hidden="true"></i> Consultar por WhatsApp</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
 
+<!-- ================= RESIDENCIA ================= -->
+<section id="residencia" class="section section-navy">
+  <div class="wrap">
+    <div class="res-top">
+      <figure class="res-photo">
+        <img src="images/residencia.jpg" alt="Médicos residentes de ITEC" loading="lazy">
+      </figure>
+      <div class="res-copy">
+        <h2 class="section-title">Residencia en cardiología</h2>
+        <p class="section-lead">Formamos médicos cardiólogos universitarios desde hace más de 20 años.</p>
+        <ul class="res-points">
+          <li>Avalada por la Comisión Nacional de Evaluación y Acreditación Universitaria (CONEAU).</li>
+          <li>Experiencia en todas las subespecialidades de la cardiología, con muy buena salida laboral.</li>
         </ul>
-
-
-        <!-- Contenido -->
-
-        <div class="tab-content wow fadeInUp">
-
-
-            <!-- Hemodinamia -->
-
-            <div class="tab-pane fade show active"
-                 id="hemodinamia">
-
-                <div class="card shadow-sm p-4">
-
-                    <h4>Cardiología Intervencionista</h4>
-
-                    <p>
-                        <i class="fa fa-clock-o"></i>
-                        8:30 a 14:00 —
-                        <i class="fa fa-map-marker"></i>
-                        Corrientes 654
-                    </p>
-
-                    <p><strong>Staff:</strong> Romero — Martínez</p>
-
-                    <ul>
-                        <li>Cinecoronariografía</li>
-                        <li>Arteriografía periférica</li>
-                        <li>Angioplastia transluminal</li>
-                        <li>Implante TAVI</li>
-                    </ul>
-
-                    <a href="https://wa.me/5493814860896"
-                       class="btn btn-success">
-                        WhatsApp Turno
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <!-- Ergometría -->
-
-            <div class="tab-pane fade"
-                 id="ergometria">
-
-                <div class="card shadow-sm p-4">
-
-                    <h4>Ergometría y Deportología</h4>
-
-                    <p>
-                        9:00 a 13:00 — Maipú 574
-                    </p>
-
-                    <p><strong>Staff:</strong> Celia Pérez</p>
-
-                </div>
-
-            </div>
-
-
-            <!-- Ecocardiografía -->
-
-            <div class="tab-pane fade"
-                 id="ecocardiografia">
-
-                <div class="card shadow-sm p-4">
-
-                    <h4>Eco Doppler cardíaco y vascular</h4>
-
-                    <p>
-                        8:00 a 19:00 — Maipú 574
-                    </p>
-
-                    <p><strong>Staff:</strong> Equipo cardiológico</p>
-
-                    <a href="https://wa.me/5493815781253"
-                       class="btn btn-success">
-                        WhatsApp Turno
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <!-- Electrofisiología -->
-
-            <div class="tab-pane fade"
-                 id="electrofisiologia">
-
-                <div class="card shadow-sm p-4">
-
-                    <h4>Electrofisiología</h4>
-
-                    <p>Marcapasos — Ablaciones — ENSITE</p>
-
-                    <a href="https://wa.me/5493814860896"
-                       class="btn btn-success">
-                        WhatsApp Turno
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <!-- Vascular -->
-
-            <div class="tab-pane fade"
-                 id="vascular">
-
-                <div class="card shadow-sm p-4">
-
-                    <h4>Cirugía Cardiovascular</h4>
-
-                    <p>ByPass — Recambios valvulares</p>
-
-                    <a href="https://wa.me/5493814860896"
-                       class="btn btn-success">
-                        WhatsApp Turno
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <!-- Coronaria -->
-
-            <div class="tab-pane fade"
-                 id="coronaria">
-
-                <div class="card shadow-sm p-4">
-
-                    <h4>Unidad Coronaria</h4>
-
-                    <p>Atención especializada 24h</p>
-
-                    <a href="https://wa.me/5493814860896"
-                       class="btn btn-success">
-                        WhatsApp Turno
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
+      </div>
     </div>
 
+    <ol class="res-years">
+      <li>
+        <h3>Primer año</h3>
+        <p>Clínica médica, terapia intensiva y unidad coronaria</p>
+      </li>
+      <li>
+        <h3>Segundo año</h3>
+        <p>Ecocardiografía, ergometría y unidad coronaria</p>
+      </li>
+      <li>
+        <h3>Tercer año</h3>
+        <p>Hemodinamia, electrofisiología y cirugía cardiovascular</p>
+      </li>
+      <li>
+        <h3>Cuarto año</h3>
+        <p>Rotación externa internacional, cardiología en embarazo y pediatría, y consultorio externo</p>
+      </li>
+    </ol>
+  </div>
 </section>
 
-	<section id="speakers" class="parallax-section">
-		<div class="container">
-			<div class="row">
-	
-				<!-- Testimonial Owl Carousel section
-				================================================== -->
-				<div id="owl-speakers" class="owl-carousel">
-	
-					<div class="item wow fadeInUp col-md-12 col-sm-3" data-wow-delay="0.9s">
-						<div class="speakers-wrapper">
-							<img src="images/recepcion.jpg" class="img-responsive" alt="speakers">
-						</div>
-					</div>
-	
-					<div class="item wow fadeInUp col-md-12 col-sm-3" data-wow-delay="0.6s">
-						<div class="speakers-wrapper">
-							<img src="images/Hemodinamia2.jpg" class="img-responsive" alt="speakers">
-						</div>
-					</div>
-
-					<div class="item wow fadeInUp col-md-12 col-sm-3" data-wow-delay="0.6s">
-						<div class="speakers-wrapper">
-							<img src="images/electrofisiologia.jpg" class="img-responsive" alt="speakers">
-						</div>
-					</div>
-
-					<div class="item wow fadeInUp col-md-12 col-sm-3" data-wow-delay="0.6s">
-						<div class="speakers-wrapper">
-							<img src="images/cirugiacardiovascular.jpg" class="img-responsive" alt="speakers">
-						</div>
-					</div>
-
-					<div class="item wow fadeInUp col-md-12 col-sm-3" data-wow-delay="0.6s">
-						<div class="speakers-wrapper">
-							<img src="images/Hemodinamia.jpg" class="img-responsive" alt="speakers">
-						</div>
-					</div>
-
-					<div class="item wow fadeInUp col-md-12 col-sm-3" data-wow-delay="0.6s">
-						<div class="speakers-wrapper">
-							<img src="images/ecografia.jpg" class="img-responsive" alt="speakers">
-						</div>
-					</div>
-			
-				</div>
-	
-			</div>
-		</div>
-	</section>
-
-<section id="residencia" class="py-5 bg-light">
-	<div class="container">
-		<div class="row g-4">
-			<div class="col-md-6">
-				<div class="card shadow-sm border-0">
-				<img src="images/residencia.jpg"
-				class="img-fluid rounded"
-				style="object-fit:cover; height:100%; max-height:420px;"
-				alt="Residencia 1">
-				</div>
-			</div>
-			<div class="col-md-6">
-				<div class="card shadow-sm border-0">
-					<img src="images/residencia2.jpg"
-					class="img-fluid rounded"
-					style="object-fit:cover; height:100%; max-height:420px;"
-					alt="Residencia 2">
-				</div>
-			</div>
-		</div>
-	</div>
+<!-- ================= UBICACIÓN ================= -->
+<section id="ubicacion" class="section">
+  <div class="wrap loc">
+    <div class="loc-copy">
+      <h2 class="section-title">Cómo llegar</h2>
+      <p class="section-lead">Estamos en el centro de San Miguel de Tucumán.</p>
+      <dl class="loc-list">
+        <div><dt>Consultorios</dt><dd>Maipú 574 PB</dd></div>
+        <div><dt>Hemodinamia</dt><dd>Corrientes 654</dd></div>
+        <div><dt>Guardia 24 horas</dt><dd>Sanatorio del Norte, Maipú 617</dd></div>
+        <div><dt>Teléfono</dt><dd><a href="tel:+543814366479">436-6479</a></dd></div>
+      </dl>
+      <a class="btn btn-wa" href="https://wa.me/5493815781253" target="_blank" rel="noopener"><i class="fa fa-whatsapp" aria-hidden="true"></i> Escribinos por WhatsApp</a>
+    </div>
+    <div class="loc-map">
+      <iframe title="Mapa de ITEC en Google Maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.541847128444!2d-65.20854552391803!3d-26.82271307670091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c171574d8db%3A0x997dfdb887a3a45e!2sItec%20-%20Instituto%20Tucuman%20de%20Enfermedades%20del%20Corazon%20SRL!5e0!3m2!1ses-419!2sar!4v1690342385355!5m2!1ses-419!2sar" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
 </section>
 
-<section id="ubicacion" class="py-5 bg-light">
-	<div class="container">
-		<div class="text-center mb-5">
-			<h2 class="fw-bold">Dónde Encontrarnos</h2>
-			<p class="text-muted">
-			Ubicados en el corazón de San Miguel de Tucumán,
-			con acceso fácil desde cualquier punto de la ciudad.
-			</p>
-		</div>
-		<div class="row g-4 align-items-stretch">
-			<!-- MAPA -->
-			<div class="col-lg-7">
-				<div class="card shadow-sm border-0 h-100 overflow-hidden">
-					<iframe
-					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.541847128444!2d-65.20854552391803!3d-26.82271307670091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c171574d8db%3A0x997dfdb887a3a45e!2sItec%20-%20Instituto%20Tucuman%20de%20Enfermedades%20del%20Corazon%20SRL!5e0!3m2!1ses-419!2sar!4v1690342385355!5m2!1ses-419!2sar"
-					width="100%"
-					height="100%"
-					style="min-height:420px;border:0;"
-					loading="lazy">
-					</iframe>
-				</div>
-			</div>
-			<!-- DATOS -->
-			<div class="col-lg-5">
-				<div class="card shadow-sm border-0 h-100 p-4 d-flex flex-column justify-content-center">
-					<h4 class="fw-bold mb-3">Información de contacto</h4>
-					<p class="mb-2">
-					<i class="fa fa-map-marker me-2"></i>
-					Maipú 574 PB — San Miguel de Tucumán
-					</p>
-					<p class="mb-4">
-					<i class="fa fa-phone me-2"></i>
-					Tel: 436-6479
-					</p>
-					<div class="text-center">
-						<a href="https://wa.me/5493815781253"
-						target="_blank"
-						class="btn btn-success px-4 rounded-pill shadow-sm">
-						<i class="fa fa-whatsapp me-1"></i>
-						Contactar por WhatsApp
-					</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+</main>
 
-<!-- =========================
-    FOOTER SECTION   
-============================== -->
-<footer>
-	<div class="container">
-		<div class="row">
-
-			<div class="col-md-12 col-sm-12">
-				<p class="wow fadeInUp" data-wow-delay="0.1s">Copyright &copy; 2023 Gabriel Salcedo
-                    
-                    | Diseño: <a rel="nofollow" href="https://gabsalel.up.railway.app/" target="_parent">Gabsalel</a></p>
-
-				<!-- <ul class="social-icon">
-					<li><a href="#" class="fa fa-facebook wow fadeInUp" data-wow-delay="1s"></a></li>
-					<li><a href="#" class="fa fa-twitter wow fadeInUp" data-wow-delay="1.3s"></a></li>
-					<li><a href="#" class="fa fa-dribbble wow fadeInUp" data-wow-delay="1.6s"></a></li>
-					<li><a href="#" class="fa fa-behance wow fadeInUp" data-wow-delay="1.9s"></a></li>
-					<li><a href="#" class="fa fa-google-plus wow fadeInUp" data-wow-delay="2s"></a></li>
-				</ul> -->
-
-			</div>
-			
-		</div>
-	</div>
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <img src="images/itec.webp" alt="ITEC" width="120" height="50" loading="lazy">
+    <p>© <span id="anio">2026</span> ITEC, Instituto Tucumán de Enfermedades del Corazón S.R.L.</p>
+    <p class="footer-credit">Desarrollo: <a href="https://gabsalel.up.railway.app/" target="_blank" rel="noopener">Gabriel Salcedo</a></p>
+  </div>
 </footer>
 
+<a class="wa-float" href="https://wa.me/5493815781253" target="_blank" rel="noopener" aria-label="Escribir a ITEC por WhatsApp">
+  <i class="fa fa-whatsapp" aria-hidden="true"></i>
+</a>
 
-<!-- Back top -->
-<a id="ir-arriba" href="#back-top" class="go-top"><i class="fa fa-angle-up"></i></a>
-
-<!-- =========================
-     SCRIPTS   
-============================== -->
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.parallax.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/smoothscroll.js"></script>
-<script src="js/wow.min.js"></script>
-<script src="js/custom.js"></script>
-<script src="js/MostrarComponentes.js"></script>
-
-
+<script src="js/itec.js"></script>
 </body>
 </html>

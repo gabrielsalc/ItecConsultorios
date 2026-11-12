@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /html/
+Disallow: /php/
+
+Sitemap: https://iteccardiologia.com.ar/sitemap.xml
