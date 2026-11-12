@@ -5,7 +5,7 @@
   <div class="wrap hero-grid">
     <div class="hero-copy">
       <h1 class="hero-title">Instituto Tucumán de Enfermedades del Corazón</h1>
-      <p class="hero-lead">Consultas cardiológicas, estudios, hemodinamia, electrofisiología y cirugía cardiovascular en San Miguel de Tucumán.</p>
+      <!-- <p class="hero-lead">Consultas cardiológicas, estudios, hemodinamia, electrofisiología y cirugía cardiovascular en San Miguel de Tucumán.</p> -->
       <div class="hero-actions">
         <a class="btn btn-red btn-lg" href="#profesionales">Pedir turno</a>
         <a class="btn btn-outline btn-lg" href="php/login.php">Ver mis estudios</a>
@@ -37,8 +37,8 @@
     <div class="fact">
       <i class="fa fa-heartbeat" aria-hidden="true"></i>
       <div>
-        <h2>Guardia las 24 horas</h2>
-        <p>Los 365 días en Sanatorio del Norte, Maipú 617</p>
+        <h2>Hemodinamia</h2>
+        <p>Corrientes 657, <a href="tel:+5493814860896">381 486-0896</a> (solo llamadas)</p>
       </div>
     </div>
     <div class="fact">
@@ -60,8 +60,9 @@
         <p class="section-lead">Elegí un profesional y pedí tu turno online. En cada ficha figura qué obras sociales atiende.</p>
       </div>
       <div class="quick-turns">
-        <p>Turnos para EcoDoppler y ergometría</p>
-        <a class="btn btn-wa" href="https://wa.me/5493815781253" target="_blank" rel="noopener"><i class="fa fa-whatsapp" aria-hidden="true"></i> Pedir por WhatsApp</a>
+        <p>Turnos por WhatsApp</p>
+        <a class="btn btn-wa" href="https://wa.me/5493814772363" target="_blank" rel="noopener"><i class="fa fa-whatsapp" aria-hidden="true"></i> EcoDoppler</a>
+        <a class="btn btn-wa" href="https://wa.me/5493815781253" target="_blank" rel="noopener"><i class="fa fa-whatsapp" aria-hidden="true"></i> Ergometría</a>
       </div>
     </div>
 
@@ -139,8 +140,8 @@ foreach ($medicos as $m):
             <h3>Cardiología intervencionista</h3>
             <dl class="svc-meta">
               <div><dt>Horario</dt><dd>8:30 a 14:00</dd></div>
-              <div><dt>Dirección</dt><dd>Corrientes 654</dd></div>
-              <div><dt>Equipo</dt><dd>Dr. Romero y Dr. Martínez</dd></div>
+              <div><dt>Dirección</dt><dd>Corrientes 657</dd></div>
+              <div><dt>Equipo</dt><dd>Dr. Manuel Romero<br>Dr. Alejandro Martínez<br>Dr. Gerónimo Alonso</dd></div>
             </dl>
             <ul class="svc-list">
               <li>Cinecoronariografía</li>
@@ -148,7 +149,7 @@ foreach ($medicos as $m):
               <li>Angioplastia transluminal</li>
               <li>Implante TAVI</li>
             </ul>
-            <a class="btn btn-wa" href="https://wa.me/5493814860896" target="_blank" rel="noopener"><i class="fa fa-whatsapp" aria-hidden="true"></i> Pedir turno por WhatsApp</a>
+            <a class="btn btn-navy" href="tel:+5493814860896"><i class="fa fa-phone" aria-hidden="true"></i> Llamar para pedir turno</a>
           </div>
         </article>
 
@@ -159,9 +160,9 @@ foreach ($medicos as $m):
             <dl class="svc-meta">
               <div><dt>Horario</dt><dd>8:00 a 19:00</dd></div>
               <div><dt>Dirección</dt><dd>Maipú 574</dd></div>
-              <div><dt>Equipo</dt><dd>Equipo cardiológico de ITEC</dd></div>
+              <div><dt>Equipo</dt><dd>Dr. Álvaro Soriano<br>Dr. Carlos Soriano<br>Dr. Enrique Alonso<br>Dr. Agustín Perillo<br>Guadalupe Juarez</dd></div>
             </dl>
-            <a class="btn btn-wa" href="https://wa.me/5493815781253" target="_blank" rel="noopener"><i class="fa fa-whatsapp" aria-hidden="true"></i> Pedir turno por WhatsApp</a>
+            <a class="btn btn-wa" href="https://wa.me/5493814772363" target="_blank" rel="noopener"><i class="fa fa-whatsapp" aria-hidden="true"></i> Pedir turno por WhatsApp</a>
           </div>
         </article>
 
@@ -169,12 +170,15 @@ foreach ($medicos as $m):
           <img src="images/electrofisiologia.jpg" alt="Equipamiento de electrofisiología" loading="lazy">
           <div class="svc-info">
             <h3>Electrofisiología</h3>
+            <dl class="svc-meta">
+              <div><dt>Equipo</dt><dd>Dr. Félix Albano</dd></div>
+            </dl>
             <ul class="svc-list">
               <li>Marcapasos</li>
               <li>Ablaciones</li>
-              <li>Mapeo con sistema ENSITE</li>
+              <li>ENSITE</li>
             </ul>
-            <a class="btn btn-wa" href="https://wa.me/5493814860896" target="_blank" rel="noopener"><i class="fa fa-whatsapp" aria-hidden="true"></i> Pedir turno por WhatsApp</a>
+            <a class="btn btn-navy" href="tel:+5493814860896"><i class="fa fa-phone" aria-hidden="true"></i> Llamar para pedir turno</a>
           </div>
         </article>
 
@@ -182,11 +186,14 @@ foreach ($medicos as $m):
           <img src="images/cirugiacardiovascular.jpg" alt="Cirugía cardiovascular en quirófano" loading="lazy">
           <div class="svc-info">
             <h3>Cirugía cardiovascular</h3>
+            <dl class="svc-meta">
+              <div><dt>Equipo</dt><dd>Dr. Bruno Allori</dd></div>
+            </dl>
             <ul class="svc-list">
-              <li>Bypass coronario</li>
+              <li>Bypass</li>
               <li>Recambios valvulares</li>
             </ul>
-            <a class="btn btn-wa" href="https://wa.me/5493814860896" target="_blank" rel="noopener"><i class="fa fa-whatsapp" aria-hidden="true"></i> Pedir turno por WhatsApp</a>
+            <a class="btn btn-navy" href="tel:+5493814860896"><i class="fa fa-phone" aria-hidden="true"></i> Llamar para pedir turno</a>
           </div>
         </article>
 
@@ -197,7 +204,7 @@ foreach ($medicos as $m):
             <dl class="svc-meta">
               <div><dt>Horario</dt><dd>9:00 a 13:00</dd></div>
               <div><dt>Dirección</dt><dd>Maipú 574</dd></div>
-              <div><dt>Equipo</dt><dd>Dra. Celia Pérez</dd></div>
+              <div><dt>Equipo</dt><dd>Dra. Celia Pérez Caram</dd></div>
             </dl>
             <a class="btn btn-wa" href="https://wa.me/5493815781253" target="_blank" rel="noopener"><i class="fa fa-whatsapp" aria-hidden="true"></i> Pedir turno por WhatsApp</a>
           </div>
@@ -208,7 +215,10 @@ foreach ($medicos as $m):
           <div class="svc-info">
             <h3>Unidad coronaria</h3>
             <p>Atención especializada las 24 horas.</p>
-            <a class="btn btn-wa" href="https://wa.me/5493814860896" target="_blank" rel="noopener"><i class="fa fa-whatsapp" aria-hidden="true"></i> Consultar por WhatsApp</a>
+            <dl class="svc-meta">
+              <div><dt>Equipo</dt><dd>Dr. Esteban Ávila</dd></div>
+            </dl>
+            <a class="btn btn-navy" href="tel:+5493814860896"><i class="fa fa-phone" aria-hidden="true"></i> Llamar a la unidad coronaria</a>
           </div>
         </article>
       </div>
@@ -262,8 +272,10 @@ foreach ($medicos as $m):
       <p class="section-lead">Estamos en el centro de San Miguel de Tucumán.</p>
       <dl class="loc-list">
         <div><dt>Consultorios</dt><dd>Maipú 574 PB</dd></div>
-        <div><dt>Hemodinamia</dt><dd>Corrientes 654</dd></div>
-        <div><dt>Guardia 24 horas</dt><dd>Sanatorio del Norte, Maipú 617</dd></div>
+        <div><dt>WhatsApp consultorios</dt><dd><a href="https://wa.me/5493815781253" target="_blank" rel="noopener">+54 9 381 578-1253</a></dd></div>
+        <div><dt>WhatsApp EcoDoppler</dt><dd><a href="https://wa.me/5493814772363" target="_blank" rel="noopener">+54 9 381 477-2363</a></dd></div>
+        <div><dt>Hemodinamia</dt><dd>Corrientes 657</dd></div>
+        <div><dt>Teléfono hemodinamia</dt><dd><a href="tel:+5493814860896">381 486-0896</a> (solo llamadas)</dd></div>
         <div><dt>Teléfono</dt><dd><a href="tel:+543814366479">436-6479</a></dd></div>
       </dl>
       <a class="btn btn-wa" href="https://wa.me/5493815781253" target="_blank" rel="noopener"><i class="fa fa-whatsapp" aria-hidden="true"></i> Escribinos por WhatsApp</a>
